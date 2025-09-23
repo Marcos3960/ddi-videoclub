@@ -1,0 +1,45 @@
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+body {
+    background-color: #222;
+    /* color de fondo */
+    margin: 0;
+    /* elimina márgenes del body */
+    padding: 0;
+}
+
+.contenedor {
+    /* asigna una clase al contenedor principal */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    /* espacio entre portadas */
+    max-width: 1100px;
+    /* ancho máximo del grid */
+    margin: 40px auto;
+    /* centra horizontalmente y añade margen superior/inferior */
+    padding: 15px;
+    /* espacio lateral adicional para pantallas grandes */
+    justify-items: center;
+    /* centra las portadas en sus columnas */
+    background-color: #949494;
+    border-radius: 8px;
+
+}
+
+.pelicula img {
+    width: 240px;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.pelicula img:hover {
+    transform: scale(1.05);
+}
