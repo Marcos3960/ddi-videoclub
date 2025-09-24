@@ -6,26 +6,18 @@ h1 {
 
 body {
     background-color: #222;
-    /* color de fondo */
     margin: 0;
-    /* elimina márgenes del body */
     padding: 0;
 }
 
 .contenedor {
-    /* asigna una clase al contenedor principal */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
-    /* espacio entre portadas */
     max-width: 1100px;
-    /* ancho máximo del grid */
     margin: 40px auto;
-    /* centra horizontalmente y añade margen superior/inferior */
     padding: 15px;
-    /* espacio lateral adicional para pantallas grandes */
     justify-items: center;
-    /* centra las portadas en sus columnas */
     background-color: #949494;
     border-radius: 8px;
 
@@ -42,4 +34,16 @@ body {
 
 .pelicula img:hover {
     transform: scale(1.05);
+}
+
+.info {
+    position: absolute;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        padding: 6px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.2s;
 }
