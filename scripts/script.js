@@ -34,3 +34,18 @@ window.onclick = function (e) {
         cerrarModal();
     }
 };
+
+const toggleBtn = document.getElementById('toggleTema');
+let modoActual = "oscuro"; // por defecto
+
+toggleBtn.addEventListener('click', () => {
+    if (modoActual === "oscuro") {
+        document.body.classList.add("claro");
+        toggleBtn.src = "assets/oscuro.png"; // icono para volver a modo oscuro
+        modoActual = "claro";
+    } else {
+        document.body.classList.remove("claro");
+        toggleBtn.src = "assets/claro.png"; // icono para volver a modo claro
+        modoActual = "oscuro";
+    }
+});
