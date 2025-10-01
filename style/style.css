@@ -163,3 +163,23 @@ h1 img {
         grid-template-columns: 1fr;
     }
 }
+
+span {
+        background-image: url('../assets/claro.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+}   
+
+span.claro{
+    background-image: url('../assets/oscuro.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
